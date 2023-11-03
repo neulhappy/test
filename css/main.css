@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Roboto+Slab:wght@400;700&display=swap');
+/*font-family: 'Noto Serif KR', serif;
+font-family: 'Roboto Slab', serif;*/
+
+/* 요소초기화 */
+html { font-size: 62.5%; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+ul { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: 400; }
+img { vertical-align: top; }
+a { text-decoration:none; color:#000; }
+address,em { font-style: normal; }
+
+
+body { font-size: 1.6rem; line-height: 1.6; color: #5E6064; word-break: keep-all; }
+
+
+/* .inner 미디어쿼리 */
+@media (max-width:1600px) {
+    .inner { max-width: calc(100% - 160px); }
+}
+
+@media (max-width:1400px) {
+    .inner { max-width: calc(100% - 140px); }
+}
+
+@media (max-width:1200px) {
+    .inner { max-width: calc(100% - 120px); }
+}
+
+@media (max-width:1024px) {
+    .inner { max-width: calc(100% - 100px); }
+}
+
+@media (max-width:768px) {
+    .inner { max-width: calc(100% - 40px); }
+}
+
+
+/* header 영역 */
+#header { z-index: 10; color: #FFF; width: 100%; position: fixed; font-family: 'Roboto Slab', serif; background: rgba(168, 194, 251, 0.8); }
+#header .inner { padding: 30px 0; display: flex; justify-content: center; gap: 50px; }
+#header .inner .gnb { display: flex; gap: 50px; }
+#header h1 { font-size: 3rem; }
+#header li { cursor: pointer; font-size: 3rem; }
+
+/* header 미디어쿼리 */
+@media (max-width:1200px) {
+    #header.inner { padding: 20px 0;  }
+    #header h1 { font-size: 2rem; }
+    #header li { font-size: 2rem; }
+}
+
+@media (max-width:768px) {
+    #header.inner { padding: 15px 0; gap: 20px; }
+    #header .inner .gnb { gap: 20px; }
+    #header h1 { font-size: 1.5rem; }
+    #header li { font-size: 1.5rem; }
+}
+
+/* main  */
+#main .inner { text-align: center;}
+
+
+/* sec1 */
+#main .sec1 { height: 1000px; position: relative; border-bottom: 3px dotted #ddd;  font-family: 'Noto Serif KR', serif; padding: 300px 200px 200px 200px; }
+#main .sec1 h2 { padding: 50px 0 0 0; font-size: 3.5rem;}
+#main .sec1 p { padding-top: 150px; font-size: 2rem; letter-spacing: 2px;}
+
+
+/* sec1 미디어쿼리 */
+@media (max-width:1200px) {
+    #main .sec1 h2 { font-size: 3rem; }
+    #main .sec1 p { font-size: 1.6rem; }
+}
+
+@media (max-width:768px) {
+    #main .sec1 { height: 800px; padding: 200px 50px; }
+    #main .sec1 h2 { font-size: 2.5rem;  }
+    #main .sec1 p { font-size: 1.3rem; }
+}
+
+
+
+/* sec2 */
+#main .sec2 { height: 1000px; text-align: center; border-bottom: 3px dotted #ddd; padding: 200px; }
+#main .sec2 h2 { padding-bottom: 50px; font-family: 'Roboto Slab', serif; font-size: 4rem; font-weight: 700; }
+#main .sec2 ul { padding-left: 200px; }
+#main .sec2 img { margin-right: 20px; display: inline-block; height: 30px; width: 30px; }
+#main .sec2 li { letter-spacing: 2px; display: flex; font-size: 2rem; padding: 50px 0 0 300px; font-family: 'Noto Serif KR', serif;  }
+#main .sec2 span { text-indent: 20px; font-weight: 700; }
+
+/* sec2 미디어쿼리 */
+
+@media (max-width:1200px) {
+    #main .inner .sec2 { padding: 200px 100px; }
+    #main .sec2 ul { padding-left: 100px; }
+    #main .sec2 li { font-size: 1.6rem; padding: 10px 0;  }
+    #main .inner .sec2 h2{ font-size: 3rem; }
+}
+
+@media (max-width:768px) {
+    #main .sec2 { height: 800px; padding: 200px 0; }
+    #main .sec2 ul { padding:0; }
+    #main .sec2 li { font-size: 1.3rem; padding: 10px 0; letter-spacing: 0;  }
+    #main .sec2 img { height: 20px; width: 20px; }
+    #main .sec2 h2{ font-size: 2.5rem; }
+}
+
+/* sec3 */
+#main .sec3 { height: 1000px; font-family: 'Roboto Slab', serif; padding: 150px; border-bottom: 3px dotted #ddd; }
+#main .sec3 .inner { width: 1200px; transform: translateX(15%); }
+#main .sec3 h2 { padding-bottom: 50px; font-family: 'Roboto Slab', serif; font-size: 4rem; font-weight: 700; }
+#main .sec3 h3 { padding-bottom: 20px; font-size: 3rem;  }
+#main .sec3 .soft-skill p { font-family: 'Noto Serif KR', serif; }
+#main .sec3 .percent-bar { font-size: 2rem; transform: translateX(5%); padding-bottom: 20px; display: flex; }
+#main .sec3 .bar-container { transition: all 0.5s; box-shadow: 3px 3px 5px #ddd; width: calc(100% - 300px); background: #f1f1f1; text-align: center; color: #fff; border-radius: 5px; }
+#main .sec3 .bar-container:hover { transform: translate(5px ,5px); font-size: 2.3rem; }
+#main .sec3 .bar { height: 100%; background-color: rgba(168, 194, 251, 0.8); border-radius: 5px 20px 20px 5px; }
+#main .sec3 p { width: 120px; }
+
+/* sec3 미디어쿼리 */
+
+@media (max-width:1200px) {
+    #main .sec3 h2 { font-size: 3rem; }
+    #main .sec3 h3 { font-size: 2rem; }
+}
+
+@media (max-width:768px) {
+    #main .sec3 { height: 800px; }
+    #main .sec3 h2 { font-size: 2.5rem; }
+    #main .sec3 h3 { font-size: 2rem; }
+    #main .sec3 .bar-container { display: none; }
+    #main .sec3 .percent-bar { font-size: 1.3rem; }
+}
+
+
+/* sec4 */
+#main .sec4 { height: 1000px; padding: 100px 0; }
+#main .sec4 h2 { padding-bottom: 50px; font-family: 'Roboto Slab', serif; font-size: 4rem; font-weight: 700; }
+#main .sec4 dl {  margin: 0 auto;  width: 477px; height: 651px;  transition: all 0.5s; position: relative; }
+#main .sec4 dl dt { display: block; max-width: 100% ; max-height: 100%;  }
+#main .sec4 dl dd { display: none; font-size: 2rem; padding-top: 200px; top:0; left: 0; position: absolute; width: 477px; height: 651px; background: rgba(168, 194, 251, 0.8); }
+#main .sec4 dl:hover dd { display: block; }
+#main .sec4 dl a { display: inline-block; margin-top: 50px; background: white; padding: 10px; border-radius: 30px; }
+
+/* sec3 미디어쿼리 */
+
+@media (max-width:1200px) {
+    #main .sec4 h2 { font-size: 3rem; }
+}
+
+@media (max-width:768px) {
+    #main .sec4 { height: 800px; padding: 20px 0 0 0;}
+    #main .sec4 h2 { font-size: 2.5rem; }
+    #main .sec4 dl dd { font-size: 1.6rem; }
+}
+
+
+/* footer */
+#footer {  text-align: center; font-family: 'Roboto Slab', serif; padding: 100px; background: rgba(168, 194, 251, 0.8); color: #fff; }
+#footer img { width: 50px; height: 50px; }
+#footer address { padding-top: 20px; }
+
+/* footer 미디어쿼리 */
+@media (max-width:768px) {
+    #footer { padding: 50px; font-size: 1.3rem; }
+    #footer img { width: 30px; height: 30px; }
+}
+
+
+/* gotop */
+.gotop { cursor: pointer; position: fixed; bottom: 100px; right: 30px; }
+
